@@ -106,7 +106,9 @@ grunt.initConfig({
   uglify: {
     my_target: {
       files: {
-        'src/js/script.js': ['deploy/js/script.js']
+        'src/js/map.js': ['deploy/js/map.js'],        
+        'src/js/workshop-map.js': ['deploy/js/workshop-map.js']
+
       }
     }
   },

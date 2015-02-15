@@ -137,16 +137,16 @@ form {
 input[type=text] {
   display: block;
   width: 100%;
-  padding: $padding-margin-value;
-  margin: $padding-margin-value auto $padding-margin-value auto;
+  padding: $form-padding-value;
+  margin: $form-padding-value auto $form-padding-value auto;
   border: 1px solid $grey;
   color: $black;
 }
 
 input[type=email] {
   display: block;
-  padding: $padding-margin-value;
-  margin: 0 auto $padding-margin-value auto;
+  padding: $form-padding-value;
+  margin: 0 auto $form-padding-value auto;
   width: 100%;
   border: 1px solid $grey;
   color: $black;
@@ -154,8 +154,8 @@ input[type=email] {
 
 input[type=number] {
   display: block;
-  padding: $padding-margin-value;
-  margin: 0 auto $padding-margin-value auto;
+  padding: $form-padding-value;
+  margin: 0 auto $form-padding-value auto;
   width: 100%;
   border: 1px solid $grey;
   color: $black;
@@ -163,8 +163,8 @@ input[type=number] {
 
 input[type=submit] {
   display: block;
-  padding: $padding-margin-value;
-  margin: 0 auto $padding-margin-value auto;
+  padding: $form-padding-value;
+  margin: 0 auto $form-padding-value auto;
   width: 100%;
   border: none;
   opacity: 0.7;
@@ -179,8 +179,8 @@ input[type=submit] {
 textarea {
   display: block;
   width: 100%;
-  padding: $padding-margin-value/2;
-  margin: 0 auto $padding-margin-value auto;
+  padding: $form-padding-value;
+  margin: 0 auto $form-padding-value auto;
   border: 1px solid $grey;
   color: $black;
 }
