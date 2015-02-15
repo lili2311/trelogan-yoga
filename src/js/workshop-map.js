@@ -1,7 +1,7 @@
 var map;
 
-function initialize_trelogan_yoga_map() {
-  var myLatlng = new google.maps.LatLng(53.260998,-3.501757);
+function initialize() {
+  var myLatlng = new google.maps.LatLng(53.3789055,-3.0150173);
   var mapOptions = {
     zoom: 9,
     center: myLatlng
@@ -12,9 +12,9 @@ function initialize_trelogan_yoga_map() {
   var marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
-    title: 'Trelogan Yoga Wednesday Classes'
+    title: 'Workshop: Yoga for couples, partners, friends and singles!'
   });
   
 }
 
-google.maps.event.addDomListener(window, 'load', initialize_trelogan_yoga_map);
+google.maps.event.addDomListener(window, 'load', initialize);

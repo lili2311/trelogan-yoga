@@ -130,22 +130,22 @@ h1, h3, h3 {
 form {
   margin: 0 auto;
   width: 100%;
-  max-width: 30em;
+  max-width: 20em;
   padding: $padding-margin-value;
 }
 
 input[type=text] {
   display: block;
   width: 100%;
-  padding: $padding-margin-value/2;
-  margin: 0 auto $padding-margin-value auto;
+  padding: $padding-margin-value;
+  margin: $padding-margin-value auto $padding-margin-value auto;
   border: 1px solid $grey;
   color: $black;
 }
 
 input[type=email] {
   display: block;
-  padding: $padding-margin-value/2;
+  padding: $padding-margin-value;
   margin: 0 auto $padding-margin-value auto;
   width: 100%;
   border: 1px solid $grey;
@@ -154,7 +154,7 @@ input[type=email] {
 
 input[type=number] {
   display: block;
-  padding: $padding-margin-value/2;
+  padding: $padding-margin-value;
   margin: 0 auto $padding-margin-value auto;
   width: 100%;
   border: 1px solid $grey;
@@ -163,7 +163,7 @@ input[type=number] {
 
 input[type=submit] {
   display: block;
-  padding: $padding-margin-value/2;
+  padding: $padding-margin-value;
   margin: 0 auto $padding-margin-value auto;
   width: 100%;
   border: none;
@@ -215,7 +215,7 @@ textarea {
 	background-color: $grey;
 	margin: 0 auto;
 	max-width: $max-width;
-	padding: $padding-margin-value;
+	padding: $padding-margin-value*2;
 
 }
 
@@ -226,7 +226,7 @@ p {
 	line-height: 1.3em;
 	font-size: 1.1em;
 }
-
+ 
 section {
 	background-color: $grey;
 	min-width: 15em;
@@ -235,7 +235,7 @@ section {
 	align-items: flex-start;
 	height: auto;
 	margin: $padding-margin-value/2 0;
-	padding: $padding-margin-value*2 $padding-margin-value;
+	padding: $padding-margin-value;
 	min-height: 5em;
 	width:100%;
 
