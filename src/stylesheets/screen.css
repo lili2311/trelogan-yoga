@@ -217,18 +217,18 @@ nav {
 a {
   text-decoration: none;
   opacity: 0.7;
-  color: #75A254; }
+  color: #3DA167; }
   a:hover {
     opacity: 1; }
   a:visited {
-    color: #75A254; }
+    color: #3DA167; }
 
 h1 {
   font-size: 1.5em;
   line-height: 1.5em; }
 
 h1, h3, h3 {
-  color: #75A254; }
+  color: #3DA167; }
 
 .lower-case {
   text-transform: lowercase; }
