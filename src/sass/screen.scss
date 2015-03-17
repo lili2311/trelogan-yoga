@@ -239,19 +239,10 @@ section {
 	min-height: 5em;
 	width:100%;
 
-	// h3 {
-	//   text-align: center;
-	//   padding: $padding-margin-value 0;
-	// }
 }
 
 footer {
-	// keep foter down
-	// position:absolute;
-   	// bottom:0;
-   	// width: 100%;
-   	// height: 10em;
-   	// end keep footer down
+
   	padding: $padding-margin-value*2 $padding-margin-value;
 	background: rgba(117,162,84,1);
 	background: -moz-linear-gradient(-45deg, rgba(117,162,84,1) 0%, rgba(143,173,119,1) 0%, rgba(119,199,172,1) 100%);
