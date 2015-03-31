@@ -159,6 +159,19 @@ body, html {
   color: #3c3c3c;
   line-height: 1.6em; }
 
+.social {
+  margin: 0 auto;
+  width: auto; }
+  .social ul {
+    list-style: none;
+    width: 10em;
+    margin: 0 auto; }
+    .social ul li {
+      display: inline-block;
+      margin: 1em; }
+  .social img {
+    width: 3em; }
+
 .container {
   min-height: 100%; }
 
@@ -359,6 +372,8 @@ footer {
       display: inline-block;
       width: auto;
       padding: 0; }
+  footer p {
+    font-size: .9em; }
 
 @media (min-width: 500px) {
   .column-container {

@@ -26,6 +26,23 @@ body, html {
 	line-height: 1.6em;
 }
 
+.social {
+	margin: 0 auto;
+	width: auto;
+	ul {
+		list-style: none;
+		width: 10em;
+		margin: 0 auto;
+		li {
+			display: inline-block;
+			margin: 1em;
+		}
+	}
+	img {
+		width: 3em;
+	}
+}
+
 .container {
 	min-height:100%;
 }
@@ -240,7 +257,6 @@ section {
 }
 
 footer {
-
   	padding: $padding-margin-value*2 $padding-margin-value;
 	background: rgba(117,162,84,1);
 	background: -moz-linear-gradient(-45deg, rgba(117,162,84,1) 0%, rgba(143,173,119,1) 0%, rgba(119,199,172,1) 100%);
@@ -269,6 +285,10 @@ footer {
 		  width: auto;
 		  padding: 0;
 		}
+	}
+	p {
+		font-size: .9em;
+
 	}
 }
 @media (min-width:500px) {
