@@ -1,1 +1,0 @@
-function initialize(){var a=new google.maps.LatLng(53.3789055,-3.0150173),b={zoom:9,center:a};map=new google.maps.Map(document.getElementById("map-canvas"),b);new google.maps.Marker({position:a,map:map,title:"Workshop: Yoga for couples, partners, friends and singles!"})}var map;google.maps.event.addDomListener(window,"load",initialize);
