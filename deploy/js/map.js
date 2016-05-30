@@ -1,1 +1,0 @@
-function initialize_trelogan_yoga_map(a,e){var o=new google.maps.LatLng(a,e),n={zoom:9,center:o};map=new google.maps.Map(document.getElementById("map-canvas"),n),new google.maps.Marker({position:o,map:map,title:"Trelogan Yoga Classes"})}var map;

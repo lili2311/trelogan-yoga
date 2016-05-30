@@ -40,7 +40,7 @@ grunt.initConfig({
         }**/
       },
       files: [
-        {expand: true, cwd: 'deploy/', src: ['**'], dest: ''},
+        {expand: true, cwd: 'deploy/', src: ['**'], dest: '', params: {CacheControl: 'max-age=31536000, public'}},
       ]
     },
     download: {

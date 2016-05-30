@@ -1,2 +1,4 @@
+.sass-cache
+deploy/
 node_modules/
 s3settings.json
