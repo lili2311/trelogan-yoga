@@ -9,9 +9,14 @@
   "author": "Liliana Kastilio",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-aws-s3": "~0.8.1",
-    "grunt-contrib-sass": "^1.0.0"
+    "grunt": "^1.0.1",
+    "grunt-aws-s3": "^0.14.5",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.5.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   },
   "repository": {
     "type": "git",

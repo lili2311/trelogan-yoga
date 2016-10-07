@@ -1,18 +1,17 @@
 module.exports = function(grunt) {
-var mozjpeg = require('imagemin-mozjpeg');
+//var mozjpeg = require('imagemin-mozjpeg');
 
 grunt.loadNpmTasks('grunt-aws-s3');
-grunt.loadNpmTasks('grunt-compass'); 
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-jshint');
+//grunt.loadNpmTasks('grunt-compass'); 
+//grunt.loadNpmTasks('grunt-contrib-uglify');
+//grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-watch');
-grunt.loadNpmTasks('grunt-contrib-concat');
+//.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
+//grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-contrib-sass');
-grunt.loadNpmTasks('grunt-contrib-connect');
 
 
 
@@ -53,7 +52,7 @@ grunt.initConfig({
     }
   },
   copy: {
-    main: {
+    html: {
       files: [
         // includes files within path
         {expand: true, cwd: 'src/', src: ['*.html'], dest: 'deploy/', filter: 'isFile'},
@@ -63,31 +62,31 @@ grunt.initConfig({
   sass: {
     dist: {
       files: {
-        'src/css/screen.css': 'src/sass/screen.scss'
+        'src/stylesheets/screen.css': 'src/sass/screen.scss'
       }
     }
   },
-  imagemin: {                          // Task
-    dynamic: {                         // Another target
-      files: [{
-        expand: true,                  // Enable dynamic expansion
-        cwd: 'src/img/',                   // Src matches are relative to this path
-        src: ['**/*.{png,jpg}'],   // Actual patterns to match
-        dest: 'deploy/img/'                  // Destination path prefix
-      }]
-    }
-  },
-  concat: {
-    options: {
-      separator: ';'
-    },
-    dist: {
-    }
-  },
+  // imagemin: {                          // Task
+  //   dynamic: {                         // Another target
+  //     files: [{
+  //       expand: true,                  // Enable dynamic expansion
+  //       cwd: 'src/img/',                   // Src matches are relative to this path
+  //       src: ['**/*.{png,jpg}'],   // Actual patterns to match
+  //       dest: 'deploy/img/'                  // Destination path prefix
+  //     }]
+  //   }
+  // },
+  // concat: {
+  //   options: {
+  //     separator: ';'
+  //   },
+  //   dist: {
+  //   }
+  // },
   cssmin: {
     combine: {
       files: {
-        'deploy/css/screen.css': ['src/css/screen.css']
+        'deploy/stylesheets/screen.css': ['src/stylesheets/screen.css']
       }
     }
   },
@@ -102,32 +101,32 @@ grunt.initConfig({
       ] 
     }
   },
-  uglify: {
-    my_target: {
-      files: {
+  // uglify: {
+  //   my_target: {
+  //     files: {
 
-      }
-    }
-  },
+  //     }
+  //   }
+  // },
   watch: {
     css: {
       files: 'src/sass/screen.scss',
       tasks: ['sass']
     }
   },
-  connect: {
-    server: {
-      options: {
-        port: 9001,
-        base: 'src/'
-      }
-    }
-  }
+  // connect: {
+  //   server: {
+  //     options: {
+  //       port: 9001,
+  //       base: 'src/'
+  //     }
+  //   }
+  // }
 
 });
 
 grunt.registerTask('deploy', ['default', 'aws_s3:live']);
-grunt.registerTask('default', ['copy','sass', 'concat', 'cssmin', 'htmlmin']);
-grunt.registerTask('dev', ["connect:server:keepalive"])
+grunt.registerTask('default', ['copy:html','sass', 'cssmin', 'htmlmin']);
+//grunt.registerTask('dev', ["connect:server:keepalive"])
 
 };
