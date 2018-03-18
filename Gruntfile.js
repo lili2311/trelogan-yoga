@@ -66,23 +66,6 @@ grunt.initConfig({
       }
     }
   },
-  // imagemin: {                          // Task
-  //   dynamic: {                         // Another target
-  //     files: [{
-  //       expand: true,                  // Enable dynamic expansion
-  //       cwd: 'src/img/',                   // Src matches are relative to this path
-  //       src: ['**/*.{png,jpg}'],   // Actual patterns to match
-  //       dest: 'deploy/img/'                  // Destination path prefix
-  //     }]
-  //   }
-  // },
-  // concat: {
-  //   options: {
-  //     separator: ';'
-  //   },
-  //   dist: {
-  //   }
-  // },
   cssmin: {
     combine: {
       files: {
@@ -101,32 +84,16 @@ grunt.initConfig({
       ] 
     }
   },
-  // uglify: {
-  //   my_target: {
-  //     files: {
-
-  //     }
-  //   }
-  // },
   watch: {
     css: {
       files: 'src/sass/screen.scss',
       tasks: ['sass']
     }
-  },
-  // connect: {
-  //   server: {
-  //     options: {
-  //       port: 9001,
-  //       base: 'src/'
-  //     }
-  //   }
-  // }
+  }
 
 });
 
-grunt.registerTask('deploy', [ 'aws_s3:live']);
+grunt.registerTask('deploy', ['aws_s3:live']);
 grunt.registerTask('default', ['copy:html','sass', 'cssmin', 'htmlmin']);
-//grunt.registerTask('dev', ["connect:server:keepalive"])
 
 };
