@@ -125,7 +125,7 @@ grunt.initConfig({
 
 });
 
-grunt.registerTask('deploy', ['default', 'aws_s3:live']);
+grunt.registerTask('deploy', [ 'aws_s3:live']);
 grunt.registerTask('default', ['copy:html','sass', 'cssmin', 'htmlmin']);
 //grunt.registerTask('dev', ["connect:server:keepalive"])
 
