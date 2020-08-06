@@ -226,14 +226,17 @@ nav {
         nav ul li a:visited {
           color: #3c3c3c; }
 
+nav ul li a {
+  text-decoration: none; }
+
 a {
-  text-decoration: none;
-  opacity: 0.7;
-  color: #3DA167; }
+  text-decoration: underline;
+  color: #278e52;
+  font-weight: 400; }
   a:hover {
-    opacity: 1; }
+    opacity: 0.7; }
   a:visited {
-    color: #3DA167; }
+    color: #278e52; }
 
 h1,
 h2,
@@ -246,7 +249,7 @@ h1 {
   line-height: 1.5em; }
 
 h1, h3, h3 {
-  color: #3DA167; }
+  color: #278e52; }
 
 .lower-case {
   text-transform: lowercase; }
@@ -293,10 +296,26 @@ input[type=submit] {
   border: none;
   opacity: 0.7;
   box-shadow: 0.5em 0.5em 0px rgba(0, 0, 0, 0.1);
-  background-color: #3DA167;
+  background-color: #278e52;
   color: #3c3c3c; }
   input[type=submit]:hover {
     opacity: 1; }
+
+.pay-button button {
+  display: block;
+  padding: 1em;
+  margin: 0;
+  width: 100%;
+  border: none;
+  opacity: 0.7;
+  box-shadow: 0.5em 0.5em 0px rgba(0, 0, 0, 0.1);
+  background-color: #278e52;
+  color: #fcfcfc; }
+  .pay-button button:hover {
+    opacity: 1; }
+
+.pay-button {
+  padding: 0; }
 
 textarea {
   display: block;
